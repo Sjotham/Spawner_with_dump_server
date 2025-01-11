@@ -1,0 +1,2 @@
+curl -X POST -H "Content-Type: application/json" -d '{"jsonrpc": "2.0", "method": "create_k8s_pod", "params": ["testuser", "default"], "id": 1}' http://127.0.0.1:8000
+
