@@ -3,7 +3,7 @@ import os
 import json
 import sys
 import asyncio
-from jupyterhub.spawner import Spawner
+from local_spawner import Spawner
 
 # Import KubeSpawner
 sys.path.append("/home/kubespawner/")  # Add the correct path to KubeSpawner

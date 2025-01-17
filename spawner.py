@@ -19,13 +19,16 @@ from urllib.parse import urlparse
 
 import jupyterhub
 from jinja2 import ChoiceLoader, Environment, FileSystemLoader, PackageLoader
-from jupyterhub.spawner import Spawner
-from jupyterhub.traitlets import Callable, Command
-from jupyterhub.utils import exponential_backoff, maybe_future
+# from jupyterhub.spawner import Spawner
+# from local_spawner import Spawner
+from local_traitlets import Integer, List, TraitError, TraitType, Type, Undefined, Unicode
+# from jupyterhub.traitlets import Callable, Command
+# from jupyterhub.utils import exponential_backoff, maybe_future
+from Utils import exponential_backoff, maybe_future
 from kubernetes_asyncio import client
 from kubernetes_asyncio.client.rest import ApiException
 from slugify import slugify
-from traitlets import (
+from local_traitlets import (
     Bool,
     Dict,
     Enum,
